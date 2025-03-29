@@ -1,0 +1,54 @@
+<section class="mt-5 px-15 pt-20 mb-20" id="services">
+  <div class="text-center">
+    <h2 class="font-bold">Services</h2>
+    <span class="text-secondary"> What I offer</span>
+  </div>
+
+  <div class="service_card w-1/5 mx-auto p-8 py-10 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 ease-in-out mt-12">
+    <div class="mt-10">
+      <i class="uil uil-web-grid services_icon text-main"></i>
+      <h3 class="mb-4 font-bold mt-3">Front End <br> Developer</h3>
+    </div>
+    <span
+      (click)="toggleModal()"
+      class="cursor-pointer text-main group  transition-all duration-500 ease-in-out">
+      View More
+      <i class="uil uil-arrow-right text-main group-hover:ms-[4px] transition-all duration-200 ease-in-out absolute"></i>
+    </span>
+  </div>
+
+  <!-- Modal -->
+  <div
+    class="services__modal  fixed top-0 left-0 w-full h-full bg-gray-300 flex justify-center items-center transition-all duration-500 ease-in-out "
+    [ngClass]="{'opacity-100 visible': toggleState, 'opacity-0 invisible': !toggleState}">
+    <div class="services__modal_content bg-white p-8 px-10 rounded-2xl shadow-lg w-1/3 relative ">
+      <i class="uil uil-times flex justify-end absolute text-main text-2xl cursor-pointer end-6 top-6" (click)="toggleModal()"></i>
+      <h3 class="text-center font-bold">Front End Developer</h3>
+      <p class="text-center text-secondary mt-3 main">
+        Offering services with over 1 year of experience, delivering quality work to clients and companies.
+      </p>
+      <ul class="grid pt-4">
+        <li class="flex justify-start mb-2 ">
+          <i class="uil uil-check-circle me-2 text-main"></i>
+          <p class="pt-1.5">Responsive web application development</p>
+        </li>
+        <li class="flex justify-start mb-2">
+          <i class="uil uil-check-circle me-2 text-main"></i>
+          <p class="pt-1.5">Optimized web page building</p>
+        </li>
+        <li class="flex justify-start mb-2">
+          <i class="uil uil-check-circle me-2 text-main"></i>
+          <p class="pt-1.5">Implementing interactive features</p>
+        </li>
+        <li class="flex justify-start mb-2">
+          <i class="uil uil-check-circle me-2 text-main "></i>
+          <p class="pt-1.5">Front End web development</p>
+        </li>
+        <li class="flex justify-start mb-2">
+          <i class="uil uil-check-circle me-2 text-main"></i>
+          <p class="pt-1.5">Database design and management</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

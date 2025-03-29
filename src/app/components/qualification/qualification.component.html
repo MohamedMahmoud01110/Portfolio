@@ -1,0 +1,73 @@
+<section id="qualification">
+  <div class="max-w-2xl mx-auto p-6 mb-12 ">
+    <div class="text-center">
+      <h2 class=" font-bold text-center">Qualification</h2>
+      <span class="text-secondary"> My personal journey</span>
+    </div>
+    <!-- buttons-->
+    <div class="flex justify-center gap-2 mb-6 mt-6">
+      <button
+        (click)="setTab('education')"
+        [ngClass]="{' text-main scale-105': activeTab === 'education', 'text-black': activeTab !== 'education'}"
+        class="px-4 py-2 rounded-lg transition-all text-lg duration-300 ease-in-out hover:scale-110 cursor-pointer">
+        <i class="uil uil-graduation-cap"></i> Education
+      </button>
+      <button
+        (click)="setTab('experience')"
+        [ngClass]="{'text-main  scale-105': activeTab === 'experience', 'text-black': activeTab !== 'experience'}"
+        class="px-4 py-2 rounded-lg transition-all text-lg duration-300 ease-in-out hover:scale-110 cursor-pointer">
+        <i class="uil uil-briefcase-alt"></i> Experience
+      </button>
+    </div>
+
+    <!--education content -->
+    <div class="flex  gap-15 education ">
+      <div *ngIf="activeTab === 'education'" class="transition-opacity duration-500 ease-in opacity-100 education_content  p-8">
+        <div class="relative border-l-4 border-gray-300 pl-6 ">
+          <div class="mb-8 relative animate-slide-in card">
+            <div class="absolute -left-5 mt-0.5 w-6 h-6 ball bg-main rounded-full border-4 border-white"></div>
+            <h3 class="text-lg font-semibold ms-1.5">Computer Science</h3>
+            <p class="text-gray-600 ms-1.5 text-sm mb-1.5">Cairo University</p>
+            <p class="text-gray-500 text-sm ms-1.5 date"><i class="uil uil-calendar-alt"></i> 2021 - 2025</p>
+          </div>
+          <!-- <div class=" relative animate-slide-in card ">
+            <img src="img/digital_egypt_pioneers_initiative_depi_logo.jpeg" class="w-1/2 h-full float-end" alt="">
+          </div> -->
+        </div>
+      </div>
+      <div *ngIf="activeTab === 'education'" class="transition-opacity duration-500 ease-in opacity-100 education_content  p-8">
+        <div class="relative border-l-4 border-gray-300 pl-6">
+          <div class="mb-8 relative animate-slide-in card">
+            <div class="absolute -left-5 mt-0.5 w-6 h-6 ball bg-main rounded-full border-4 border-white"></div>
+            <h3 class="text-lg font-semibold ms-1.5">Data Scientist</h3>
+            <p class="text-gray-600 ms-1.5 text-sm mb-1.5">DEPI - Egypt</p>
+            <p class="text-gray-500 text-sm ms-1.5  date"><i class="uil uil-calendar-alt me-1"></i>OCT 2024 - JUN 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="activeTab === 'education'" class="transition-opacity duration-500 ease-in opacity-100 education_content  p-8">
+      <div class="relative border-l-4 border-gray-300 pl-6">
+        <div class="mb-8 relative animate-slide-in card">
+          <div class="absolute -left-5 mt-0.5 w-6 h-6 ball bg-main rounded-full border-4 border-white"></div>
+          <h3 class="text-lg font-semibold ms-1.5">Front End Developer</h3>
+          <p class="text-gray-600 ms-1.5 text-sm mb-1.5">Route Academy</p>
+          <p class="text-gray-500 text-sm ms-1.5  date"><i class="uil uil-calendar-alt"></i> OCT 2024 - MAR 2025</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- experience content -->
+    <div *ngIf="activeTab === 'experience'" class="transition-opacity duration-500 ease-in opacity-100">
+      <!-- <div class="relative border-l-4 border-gray-300 pl-6">
+        <div class="mb-8 relative animate-slide-in card">
+          <div class="absolute -left-3 w-6 h-6 bg-green-500 rounded-full border-4 border-white"></div>
+          <p class="text-gray-500 text-sm">2023</p>
+          <h3 class="text-lg font-semibold">Full Stack Developer</h3>
+          <p class="text-gray-600"></p>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+</section>

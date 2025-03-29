@@ -1,0 +1,134 @@
+h2{
+  font-size: 2.25rem;
+}
+span{
+  font-size: .875rem;
+}
+i{
+  font-size: 1.4rem;
+}
+.br{
+  border-radius: 0.5rem;
+}
+a i{
+  font-size: 1rem;
+
+}
+
+.box{
+  padding: 10px 14px;
+  border-radius: 12px;
+
+}
+.box h3{
+  font-size: 15px;
+}
+.box span{
+  font-size: 12px;
+}
+.about_text{
+  text-align: initial;
+  width: 55%;
+}
+
+@media all and ((min-width: 500px ) and (max-width: 1025px)) {
+  .about_box{
+    width: 100%;
+    margin: 0 ;
+    padding: 0;
+    margin-top: 14px;
+  }
+  .about_box  h3{
+    font-size: 12px;
+  }
+  .about_box span{
+    font-size: 9px;
+  }
+  .about_box i{
+    font-size: 1.2rem;
+  }
+  .box{
+    width: 120px;
+  }
+  .box_container{
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    gap: 0;
+    overflow: auto;
+  }
+  .about_container{
+    width: 100%;
+    padding: 0;
+  }
+  .about_content{
+    width: 100%;
+    padding: 0;
+  }
+  .about_text{
+    width: 100%;
+    padding: 0;
+  }
+  .about_box{
+    justify-content:center
+  }
+}
+
+@media all and ((min-width: 1025px ) and (max-width: 1400px)) {
+
+  .about_box{
+    width: 100%;
+  }
+  .about_box  h3{
+    font-size: 12px;
+  }
+  .about_box span{
+    font-size: 9px;
+  }
+  .about_box i{
+    font-size: 1.2rem;
+  }
+  .box_container{
+    margin-left: 12px;
+  }
+
+  .about_text{
+  width: 100%;
+
+}}
+@media all and ((min-width: 1401px ) and (max-width: 1430px)) {
+
+  .about_box  h3{
+    font-size: 12px;
+
+  }
+  .about_box span{
+    font-size: 9px;
+  }
+
+}
+
+
+@media all and ((min-width: 500px ) and (max-width: 1100px)) {
+
+  .about_button{
+    width: 100%;
+  }
+  #about{
+    margin-top: 10px;
+    padding-top: 50px;
+  }
+  .content {
+    margin-bottom: 14px;
+  }
+
+}
+@media all and ((min-width: 500px ) and (max-width: 1020px)) {
+  .about_button{
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+
+}
+

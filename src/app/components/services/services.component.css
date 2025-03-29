@@ -1,0 +1,84 @@
+h2{
+  font-size: 2.25rem;
+}
+span{
+  font-size: .875rem;
+}
+
+
+.service_card span i{
+  font-size: 1.1rem;
+}
+
+.services_icon {
+  font-size: 2.2rem;
+}
+
+.services__modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1002;
+}
+.services__modal h3{
+  font-size: 1.1rem;
+}
+.services__modal p{
+  font-size: 0.9rem;
+}
+.services__modal i{
+  font-size: 1.2rem;
+}
+.services__modal_content i{
+  font-size: 1.5rem;
+
+}
+.opacity-0 {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.opacity-100 {
+  opacity: 1;
+  visibility: visible;
+}
+@media all and (max-width: 790px) {
+  .service_card {
+    width: 80%;
+  }
+  .services__modal{
+    width: 100%;
+
+  }
+  .services__modal_content{
+    width: 80%;
+  }
+  .services__modal_content p{
+    font-size: 0.8rem;
+  }
+  .services__modal_content p.main{
+    font-size: 0.95rem;
+  }
+  .services__modal_content i{
+
+    font-size: 1.4rem;
+  }
+
+}
+
+@media all and (min-width: 790px) and (max-width: 1260px) {
+  .service_card {
+    width: 50%;
+  }
+  .services__modal_content{
+    width: 50%;
+  }
+  .services__modal_content p{
+    font-size: 0.8rem;
+  }
+  .services__modal_content p.main{
+    font-size: 0.95rem;
+  }
+  .services__modal_content i{
+
+    font-size: 1.4rem;
+  }
+}
