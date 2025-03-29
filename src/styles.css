@@ -19,30 +19,3 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
-
-/*  */
-
-/* body {
-  font-family: var(--font-main);
-  background-color: var(--background-color);
-  color: var(--text-color);
-  transition: all 0.3s ease;
-}
-
-a, .navMenu a {
-  color: var(--text-color);
-}
-
-a:hover, .navMenu a:hover {
-  color: var(--color-main);
-}
-
-button, .btn {
-  background-color: var(--color-btn);
-  color: white;
-}
-
-button:hover, .btn:hover {
-  background-color: var(--color-btn-hvr);
-} */
