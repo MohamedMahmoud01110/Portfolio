@@ -127,7 +127,9 @@ a i{
     margin: 0;
     width: 100%;
     padding-left: 15px;
-    display: inline;
+    display: inline-block;
+    padding-bottom: 15px;
+
 
   }
   .about_box{
@@ -153,6 +155,7 @@ a i{
     margin-top: 20px;
 
   }
+
   .about_button{
     align-items: center;
     justify-content: center;
@@ -191,6 +194,16 @@ a i{
     padding-bottom: 17px;
 
   }
+  .about_box {
+    gap: 6px;
+  }
+  .about_container{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  img{
+    width: 100%;
+  }
 }
 @media all and ((min-width: 350px ) and (max-width: 385px)){
   .about_box{
@@ -201,6 +214,16 @@ a i{
   .box3 {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  .about_box {
+    gap: 6px;
+  }
+  .about_container{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  img{
+    width: 100%;
   }
 }
 @media all and ((min-width: 360px ) and (max-width: 370px)){
