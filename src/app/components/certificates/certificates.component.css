@@ -70,3 +70,22 @@ span{
     height: auto;
   }
 }
+
+@media all and ((min-width: 300px ) and (max-width: 600px)){
+  .card{
+    width: 100%;
+  }
+  .card1{
+    margin-bottom: 7px;
+  }
+  .certificate_container{
+    padding:0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+  }
+  #services{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

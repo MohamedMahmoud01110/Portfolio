@@ -113,6 +113,16 @@ a i{
   }
 
 }
+@media all and (min-width: 300px) and (max-width: 600px) {
+  .social_icons{
+    margin-top:6rem ;
+    z-index: 0;
+  }
+
+  .home_text {
+    margin-left: -12px;
+  }
+}
 
 @media all and (min-width: 1024px) and (max-width: 1270px) {
   .container{

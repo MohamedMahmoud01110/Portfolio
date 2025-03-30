@@ -82,3 +82,9 @@ span{
     font-size: 1.4rem;
   }
 }
+@media all and ((min-width: 300px ) and (max-width: 600px)){
+  .service_card {
+    width: 100%;
+  }
+
+}

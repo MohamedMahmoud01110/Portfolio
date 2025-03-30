@@ -46,6 +46,12 @@ label {
   width: 23%;
 }
 
+input{
+  text-indent: 4px;
+}
+
+
+
 input, textarea {
   border-radius: 8px;
   padding-left: 12px;
@@ -84,4 +90,16 @@ input:focus, textarea:focus {
     gap: 15px;
     padding:80px 10px;
   }
+}
+@media all and (min-width: 300px) and (max-width: 600px) {
+
+
+ .content_right {
+  width :350px;
+ }
+ .content_right h3 {
+  margin-left: 13px;
+ }
+
+
 }

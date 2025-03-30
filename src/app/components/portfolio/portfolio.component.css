@@ -67,3 +67,10 @@ p{
   }
 }
 
+@media all and (min-width: 300px) and (max-width: 600px) {
+  #portfolio{
+    padding: 0px 35px;
+    padding-bottom: 15px;
+    padding-top: 46px;
+  }
+}
