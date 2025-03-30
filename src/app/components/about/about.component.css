@@ -208,6 +208,16 @@ a i{
     padding-top: 5px;
     padding-bottom: 5px;
   }
+  .about_box {
+    gap: 6px;
+  }
+  .about_container{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  img{
+    width: 100%;
+  }
 
 }
 
