@@ -1,0 +1,157 @@
+a i{
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.br{
+  border-radius: 0.5rem;
+}
+/*==================== Waving hand  ====================*/
+.wave {
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0.0deg)
+  }
+
+  10% {
+    transform: rotate(14.0deg)
+  }
+
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8.0deg)
+  }
+
+  30% {
+    transform: rotate(14.0deg)
+  }
+
+  40% {
+    transform: rotate(-4.0deg)
+  }
+
+  50% {
+    transform: rotate(10.0deg)
+  }
+
+  60% {
+    transform: rotate(0.0deg)
+  }
+
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0.0deg)
+  }
+}
+
+
+#scroll a .ma{
+  font-size: 35px;
+
+}
+
+
+/*====================  responsive ====================*/
+@media all and (max-width: 760px) {
+
+  .container{
+    padding: 0px ;
+    gap: 0px;
+    display: flex;
+  }
+  .social_icons{
+    width: 10%;
+    height: 150px;
+    margin: auto;
+    z-index: 1000;
+    padding-left: 15px;
+
+  }
+  .home_content{
+    flex-direction: column-reverse  ;
+    padding:25px 0px;
+    width: 100%;
+    margin-left: -20px;
+  }
+  .home_img{
+    width: 250px;
+
+    margin: 0px;
+  }
+
+}
+
+
+@media all and (min-width: 760px) and (max-width: 1024px) {
+  .home_content{
+    flex-direction: row ;
+    width: 100%;
+  }
+
+  .home_img{
+    width: 100%;
+  }
+  .social_icons{
+    width: 10%;
+    height: 150px;
+    margin: auto;
+  }
+  .container{
+    padding: 0px ;
+    gap: 0px;
+    display: flex;
+  }
+
+}
+
+@media all and (min-width: 1024px) and (max-width: 1270px) {
+  .container{
+    padding: 15px ;
+    gap: 0px;
+    display: flex;
+    width: 80%;
+  }
+
+  .home_content{
+    flex-direction: row ;
+    width: 90%;
+    margin-right: auto;
+  }
+  .social_icons{
+    width: 10%;
+    height: 150px;
+    margin: auto;
+  }
+
+  .scroll_part a{
+    margin-left:15.5rem
+  }
+
+}
+
+@media all and (min-width: 1420px) and (max-width: 1530px) {
+
+  .scroll_part a{
+    margin-left:31rem
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  #scroll {
+    display: none;
+  }
+}
+
+

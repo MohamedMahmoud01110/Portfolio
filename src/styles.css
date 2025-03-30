@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import "tailwindcss";
+@import '@iconscout/unicons/css/line.css';
+@import 'boxicons/css/boxicons.min.css';
+@theme{
+  --color-main :#526ECC;
+  --color-secondary :#6B7280;
+  --color-btn :#5779E0;
+  --color-btn-hvr: #5873CE;
+  --font-main:'Poppins', sans-serif;
+  /* --color-nav : #1a1a1a; */
+}
+@layer components{
+  .main-btn{
+    @apply  mt-6 px-4 py-4 bg-btn text-white rounded shadow-lg hover:bg-main inline-block;
+  }
+
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*  */
+
+/* body {
+  font-family: var(--font-main);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+a, .navMenu a {
+  color: var(--text-color);
+}
+
+a:hover, .navMenu a:hover {
+  color: var(--color-main);
+}
+
+button, .btn {
+  background-color: var(--color-btn);
+  color: white;
+}
+
+button:hover, .btn:hover {
+  background-color: var(--color-btn-hvr);
+} */
