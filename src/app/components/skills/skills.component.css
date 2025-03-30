@@ -59,10 +59,10 @@ i{
 
 }
 
-@media all and (min-width: 300px) and (max-width: 600px) {
+@media all and (min-width: 300px) and (max-width: 450px) {
   .skills_content{
-  margin-right: 10px;
-  margin-left: 10px;
+      margin-right: 10px;
+      margin-left: 10px;
   }
 
 }
