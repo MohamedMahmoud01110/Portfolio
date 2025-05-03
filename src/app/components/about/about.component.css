@@ -275,7 +275,19 @@ a i{
   .box{
     width:27.5%;
   }
-  
+}
+@media all and (max-width: 480px) {
+  .about_box{
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .about_img{
+    width: 89%
+  }
+  .box{
+    width:31%;
+  }
+
 }
 
 @media all and (min-width: 600px) and (max-width: 740px) {
@@ -287,7 +299,7 @@ a i{
     margin:auto;
     width:75%
   }
-  
+
 }
 @media all and (min-width: 740px) and (max-width: 900px) {
   .about_content{
@@ -316,6 +328,6 @@ a i{
   .about_button{
     align-items: center !important;
     justify-content: center !important;
-    text-align: center !important;    
+    text-align: center !important;
   }
 }
