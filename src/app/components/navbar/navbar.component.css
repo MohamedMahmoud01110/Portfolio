@@ -6,6 +6,9 @@ header{
 
   box-shadow: rgba(0, 0, 0, 0.15) 0px -1px 4px;
 }
+.theme_btn{
+  font-size: clamp(16px, 3vw, 21px);
+}
 
 
 @media all and (max-width: 768px) {
@@ -30,5 +33,12 @@ header{
     margin-right: 15px;
   }
 
+
+}
+@media all and (max-width: 769px) {
+  .theme_btn{
+    font-size: larger;
+    margin-left: 0px;
+  }
 
 }

@@ -268,3 +268,54 @@ a i{
 
 }
 
+@media all and (max-width: 600px) {
+  .about_img{
+    width: 80%
+  }
+  .box{
+    width:27.5%;
+  }
+  
+}
+
+@media all and (min-width: 600px) and (max-width: 740px) {
+
+  .about_content{
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin:auto;
+    width:75%
+  }
+  
+}
+@media all and (min-width: 740px) and (max-width: 900px) {
+  .about_content{
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin:auto;
+    width:60%
+  }
+}
+@media all and (min-width: 900px) and (max-width: 1023.5px) {
+
+  .about_content{
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin:auto;
+    width:50%
+  }
+  .about_text{
+    width: 100%;
+  }
+  .about_box{
+    width: 100%;
+  }
+  .about_button{
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;    
+  }
+}

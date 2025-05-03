@@ -1,35 +1,36 @@
-<header class="fixed top-0 left-0 w-full flex justify-center items-center py-4 px-4 sm:px-72 z-50 bg-white">   <!-- [style.background]="'var(--color-nav)' -->
-  <nav class="container m-auto flex justify-between items-center px-6 pt-2">
+<header class="fixed top-0 left-0 w-full flex justify-center items-center py-4 px-4 sm:px-72 z-5000 bg-white dark:bg-[#161A27]  ">   <!-- [style.background]="'var(--color-nav)' -->
+  <nav class="container m-auto flex justify-between items-center px-6 pt-2 dark:bg-[#161A27] ">
     <!-- Logo -->
-    <a href="#home" class="logo md:-ms-8">Mohamed</a>
+    <a href="#home" class="logo md:-ms-8 hover:text-main dark:text-white dark:hover:text-main">Mohamed</a>
 
     <!-- Desktop Navbar Menu -->
     <div class="hidden md:flex space-x-6 ms-auto md:-me-5 navMenu">
-      <a href="#home" class="flex items-center text-black px-1 hover:text-main transition">
+      <a href="#home" class="flex items-center text-black px-1 hover:text-main transition dark:text-white dark:hover:text-main">
         Home
       </a>
-      <a href="#about" class="flex items-center text-black px-1 hover:text-main transition">
+      <a href="#about" class="flex items-center text-black px-1 hover:text-main transition dark:text-white dark:hover:text-main">
         About
       </a>
-      <a href="#skills" class="flex items-center  text-black px-1 hover:text-main transition">
+      <a href="#skills" class="flex items-center  text-black px-1 hover:text-main transition dark:text-white dark:hover:text-main">
         Skills
       </a>
-      <a href="#services" class="flex items-center text-black px-1 hover:text-main transition">
+      <a href="#services" class="flex items-center text-black px-1 hover:text-main transition dark:text-white dark:hover:text-main">
         Services
       </a>
-      <a href="#portfolio" class="flex items-center text-black px-1 hover:text-main transition">
+      <a href="#portfolio" class="flex items-center text-black px-1 hover:text-main transition dark:text-white dark:hover:text-main">
         Portfolio
       </a>
-      <a href="#contact" class="flex items-center text-black px-1 hover:text-main transition">
+      <a href="#contact" class="flex items-center text-black px-1 hover:text-main transition dark:text-white dark:hover:text-main">
         Contact
       </a>
-      <!-- <a href="#"  class="flex items-center px-1 transition" [style.color]="isDarkTheme ? 'var(--color-main)' : 'var(--text-color)'">
-        <i [class]="isDarkTheme ? 'fa-solid fa-sun text-2xl' : 'fa-regular fa-moon text-2xl'"></i>
-      </a> -->
     </div>
 
     <!-- Mobile Menu Button -->
-    <div class="md:hidden menu mobNav">
+
+    <a class="btn theme_btn ms-12 cursor-pointer hover:text-main dark:text-white dark:hover:text-main" (click)="toggleTheme()">
+      <i class="bi" [ngClass]="isDarkMode ? 'bi-sun-fill' : 'bi-moon-fill'"></i>
+    </a>
+    <div class="md:hidden menu">
       <button (click)="toggleMenu()" class="focus:outline-none cursor-pointer">
         <i class="uil uil-apps text-2xl text-main"></i>
       </button>
@@ -37,17 +38,19 @@
   </nav>
 
   <!-- Mobile Menu - Right Side -->
+
   <div *ngIf="isMenuOpen"
-       class="fixed inset-y-0 right-0 w-64 bg-white flex flex-col items-center justify-center space-y-6 z-50 shadow-lg transition-transform duration-300 ease-in-out"
-       [class]="isMenuOpen ? 'translate-x-0' : 'translate-x-full'">
+      class="fixed inset-y-0 right-0 w-64 bg-white dark:bg-[#161A27] flex flex-col items-center justify-center space-y-6 z-50 shadow-lg transition-transform duration-300 ease-in-out"
+      [class]="isMenuOpen ? 'translate-x-0' : 'translate-x-full'">
+
     <button (click)="closeMenu()" class="text-gray-700 text-2xl absolute top-4 left-4">
-      <i class="uil uil-times cursor-pointer hover:text-main"></i>
+      <i class="uil uil-times cursor-pointer hover:text-main dark:text-white"></i>
     </button>
-    <a href="#home" (click)="closeMenu()" class="text-gray-700 text-lg font-medium hover:text-main transition">Home</a>
-    <a href="#about" (click)="closeMenu()" class="text-gray-700 text-lg font-medium hover:text-main transition">About</a>
-    <a href="#skills" (click)="closeMenu()" class="text-gray-700 text-lg font-medium hover:text-main transition">Skills</a>
-    <a href="#services" (click)="closeMenu()" class="text-gray-700 text-lg font-medium hover:text-main transition">Services</a>
-    <a href="#portfolio" (click)="closeMenu()" class="text-gray-700 text-lg font-medium hover:text-main transition">Portfolio</a>
-    <a href="#contact" (click)="closeMenu()" class="text-gray-700 text-lg font-medium hover:text-main transition">Contact</a>
+    <a href="#home" (click)="closeMenu()" class="dark:text-white text-lg font-medium hover:text-main transition">Home</a>
+    <a href="#about" (click)="closeMenu()" class="dark:text-white text-lg font-medium hover:text-main transition">About</a>
+    <a href="#skills" (click)="closeMenu()" class="dark:text-white text-lg font-medium hover:text-main transition">Skills</a>
+    <a href="#services" (click)="closeMenu()" class="dark:text-white text-lg font-medium hover:text-main transition">Services</a>
+    <a href="#portfolio" (click)="closeMenu()" class="dark:text-white text-lg font-medium hover:text-main transition">Portfolio</a>
+    <a href="#contact" (click)="closeMenu()" class="dark:text-white text-lg font-medium hover:text-main transition">Contact</a>
   </div>
 </header>

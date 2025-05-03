@@ -1,6 +1,7 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import { Component, OnDestroy } from '@angular/core';
+import { ThemeService } from '../services/theme.service';
 
 @Component({
   selector: 'app-navbar',
@@ -10,10 +11,14 @@ import { Component, OnDestroy } from '@angular/core';
 })
 export class NavbarComponent implements OnDestroy {
   isMenuOpen = false;
-  isDarkTheme = false;
+  isDarkMode: boolean = false;
   private resizeObserver: ResizeObserver;
+  ngOnInit(): void {
+    this.isDarkMode = false; // Default to light mode
 
-  constructor() {
+
+  }
+  constructor(private themeService: ThemeService) {
     this.checkScreenSize();
     this.resizeObserver = new ResizeObserver(() => this.checkScreenSize());
     this.resizeObserver.observe(document.body);
@@ -34,54 +39,16 @@ export class NavbarComponent implements OnDestroy {
   }
 
 
-
+  toggleTheme(): void {
+    this.isDarkMode = !this.isDarkMode;
+    const newTheme = this.isDarkMode ? 'dark' : 'light';
+    this.themeService.setTheme(newTheme); // Update the theme
+  }
 
   ngOnDestroy(): void {
     this.resizeObserver.disconnect();
   }
 
-
-
-
-  // changeTheme() {
-  //   this.isDarkTheme = !this.isDarkTheme;
-  //   this.applyTheme();
-  //   // حفظ التفضيل في localStorage
-  //   localStorage.setItem('theme', this.isDarkTheme ? 'dark' : 'light');
-  // }
-
-  // private applyTheme() {
-  //   if (this.isDarkTheme) {
-  //     // تطبيق الثيم الداكن
-  //     document.documentElement.style.setProperty('--color-main', '#526ECC');
-  //     document.documentElement.style.setProperty('--color-secondary', '#A1A8B9');
-  //     document.documentElement.style.setProperty('--color-btn', '#5779E0');
-  //     document.documentElement.style.setProperty('--color-nav', '#1a1a1a');
-
-  //     document.documentElement.style.setProperty('--color-btn-hvr', '#4A67C2');
-  //     document.documentElement.style.setProperty('--background-color', '#1a1a1a');
-  //     document.documentElement.style.setProperty('--text-color', '#ffffff');
-  //   } else {
-  //     // تطبيق الثيم الفاتح
-  //     document.documentElement.style.setProperty('--color-main', '#526ECC');
-  //     document.documentElement.style.setProperty('--color-secondary', '#6B7280');
-  //     document.documentElement.style.setProperty('--color-btn', '#5779E0');
-  //     document.documentElement.style.setProperty('--color-btn-hvr', '#5873CE');
-  //     document.documentElement.style.setProperty('--color-nav', '#ffffff');
-
-  //     document.documentElement.style.setProperty('--background-color', '#ffffff');
-  //     document.documentElement.style.setProperty('--text-color', '#1a1a1a');
-  //   }
-  // }
-
-  // ngOnInit() {
-  //   // تحميل الثيم المحفوظ عند بدء التطبيق
-  //   const savedTheme = localStorage.getItem('theme');
-  //   if (savedTheme) {
-  //     this.isDarkTheme = savedTheme === 'dark';
-  //     this.applyTheme();
-  //   }
-  // }
 }
 
 
