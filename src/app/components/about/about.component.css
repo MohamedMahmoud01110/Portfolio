@@ -289,6 +289,15 @@ a i{
   }
 
 }
+@media all and (max-width: 390px) {
+  .about_box{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .box{
+    width:33.5%;
+  }
+}
 
 @media all and (min-width: 600px) and (max-width: 740px) {
 
