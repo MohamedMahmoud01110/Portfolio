@@ -101,3 +101,35 @@ input:focus, textarea:focus {
 
 
 }
+@media all and (max-width: 390px) {
+  .content_right {
+    width :330px;
+  }
+   .content_right h3 {
+    margin-left: 15px;
+    font-size: 1.4rem;
+  }
+  .card_1{
+    width: 97%;
+    margin: auto;
+  }
+  .card_2{
+    width: 97%;
+    margin: auto;
+  }
+  form{
+    width: 95%;
+    margin: auto;
+  }
+
+}
+@media all and (min-width:390px) and (max-width: 450px) {
+  form{
+    width: 95%;
+    margin: auto;
+  }
+  .content_right h3 {
+    margin-left: 19px;
+    font-size: 1.48rem;
+  }
+}

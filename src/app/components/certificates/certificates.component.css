@@ -89,3 +89,37 @@ span{
     padding-right: 20px;
   }
 }
+
+
+@media all and (max-width: 390px) {
+  .card{
+    width: 90%;
+  }
+  .cert_content{
+
+    padding-top: 3px !important;
+    padding-bottom: 10px !important;
+  }
+  .cert_content a{
+    margin-bottom: 8px !important;
+  }
+  .card1{
+    margin-bottom: 15px !important;
+  }
+}
+  @media all and (min-width:390px) and (max-width: 450px) {
+  .card{
+    width: 94%;
+  }
+  .cert_content{
+
+    padding-top: 3px !important;
+    padding-bottom: 10px !important;
+  }
+  .cert_content a{
+    margin-bottom: 8px !important;
+  }
+  .card1{
+    margin-bottom: 15px !important;
+  }
+  }
