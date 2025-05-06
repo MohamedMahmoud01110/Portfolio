@@ -35,10 +35,49 @@ header{
 
 
 }
-@media all and (max-width: 769px) {
+
+@media all and (min-width: 500px) and (max-width: 650px) {
   .theme_btn{
     font-size: larger;
-    margin-left: 0px;
+    position: absolute;
+    right: 3.9rem;
   }
-
 }
+@media all and (min-width: 650px) and (max-width: 700px) {
+
+  .theme_btn{
+    font-size: larger;
+    position: absolute;
+    right: 5rem;
+
+  }
+}
+@media all and (min-width: 700px) and (max-width: 750px) {
+  .theme_btn{
+    font-size: larger;
+    position: absolute;
+    right: 7rem;
+
+  }
+}
+@media all and (min-width: 750px)  and (max-width: 767.5px) {
+  .theme_btn{
+    font-size: larger;
+    position: absolute;
+  right: 7rem;
+  }
+}
+
+@media all and (max-width: 390px) {
+  .theme_btn{
+    margin-left: 140px !important;
+
+  }
+}
+
+  @media all and (min-width:390px) and (max-width: 450px) {
+    .theme_btn{
+      margin-left: 170px !important;
+
+    }
+  }

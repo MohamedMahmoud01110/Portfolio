@@ -164,3 +164,25 @@ a i{
   }
 }
 
+@media all and (max-width: 390px) {
+  .home_img{
+    width: 68%;
+  }
+  .home_text {
+    margin-left: -12px;
+  }
+  .social_icons{
+    margin-left: 3px;
+  }
+  .home_text h1{
+    font-size: 1.75rem;
+  }
+  .home_text p{
+    width: 97%;
+  }
+}
+  @media all and (min-width:390px) and (max-width: 450px) {
+    .home_text p{
+      width: 97%;
+    }
+  }

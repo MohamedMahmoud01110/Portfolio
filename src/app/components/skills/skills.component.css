@@ -66,3 +66,29 @@ i{
   }
 
 }
+@media all and (max-width: 390px) {
+  .skills_content{
+    width: 85%;
+    margin: auto  !important;
+    margin-top: 25px !important;
+    padding-right: 35px;
+  }
+  .skills_box{
+    justify-content: center;
+  }
+  .tail_skill{
+    margin-left:8px;
+  }
+  .skills_title{
+    margin-left: 12px;
+  }
+}
+@media all and (min-width:390px) and (max-width: 450px) {
+  .skills_content{
+    width: 88%;
+    margin: auto  !important;
+    margin-top: 25px !important;
+
+
+  }
+}
