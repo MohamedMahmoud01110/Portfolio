@@ -10,10 +10,14 @@ import { Component } from '@angular/core';
 export class ServicesComponent {
 
 
-  toggleState: boolean = false;
+modalType: 'front' | 'back' | null = null;
 
-  // Toggle modal visibility
-  toggleModal() {
-    this.toggleState = !this.toggleState;
-  }
+openModal(type: 'front' | 'back') {
+  this.modalType = type;
+}
+
+closeModal() {
+  this.modalType = null;
+}
+
 }

@@ -9,6 +9,7 @@ i{
 }
 .skills__content {
   padding: 20px;
+
 }
 
 .skills__title {
@@ -36,6 +37,11 @@ i{
   color: gray;
   /* color: var(--color-main); */
 }
+.skills_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media all and ((min-width: 1250px )) {
   .skills_content{
     width: 400px;
@@ -58,8 +64,14 @@ i{
   }
 
 }
+@media all and (min-width: 550px) and (max-width: 800px) {
+    .skills_container{
+      background-color: tomato !important;
 
+  }
+}
 @media all and (min-width: 300px) and (max-width: 450px) {
+
   .skills_content{
       margin-right: 10px;
       margin-left: 10px;
@@ -92,3 +104,10 @@ i{
 
   }
 }
+@media all and (min-width:390px) and (max-width: 1020px) {
+
+  .skills_container{
+  display: block;
+}
+}
+

@@ -40,6 +40,12 @@ span{
   opacity: 1;
   visibility: visible;
 }
+
+.services_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media all and (max-width: 790px) {
   .service_card {
     width: 80%;
