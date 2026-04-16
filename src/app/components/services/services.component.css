@@ -1,12 +1,11 @@
-h2{
+h2 {
   font-size: 2.25rem;
 }
-span{
-  font-size: .875rem;
+span {
+  font-size: 0.875rem;
 }
 
-
-.service_card span i{
+.service_card span i {
   font-size: 1.1rem;
 }
 
@@ -18,18 +17,17 @@ span{
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1002;
 }
-.services__modal h3{
+.services__modal h3 {
   font-size: 1.1rem;
 }
-.services__modal p{
+.services__modal p {
   font-size: 0.9rem;
 }
-.services__modal i{
+.services__modal i {
   font-size: 1.2rem;
 }
-.services__modal_content i{
+.services__modal_content i {
   font-size: 1.5rem;
-
 }
 .opacity-0 {
   opacity: 0;
@@ -41,69 +39,59 @@ span{
   visibility: visible;
 }
 
-.services_container{
+.services_container {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 80%;
 }
-@media all and (max-width: 790px) {
-  .service_card {
-    width: 80%;
-  }
-  .services__modal{
-    width: 100%;
-
-  }
-  .services__modal_content{
-    width: 80%;
-  }
-  .services__modal_content p{
-    font-size: 0.8rem;
-  }
-  .services__modal_content p.main{
-    font-size: 0.95rem;
-  }
-  .services__modal_content i{
-
-    font-size: 1.4rem;
-  }
-
+.service_card {
+  width: 30%;
 }
-
-@media all and (min-width: 790px) and (max-width: 1260px) {
+@media all and (min-width: 950px) and (max-width: 1150px) {
+  .services__modal_content {
+    width: 50%;
+  }
+}
+@media all and (min-width: 750px) and (max-width: 950px) {
+  .services_container {
+    flex-direction: column;
+  }
   .service_card {
     width: 50%;
   }
-  .services__modal_content{
+  .services__modal_content {
     width: 50%;
   }
-  .services__modal_content p{
-    font-size: 0.8rem;
-  }
-  .services__modal_content p.main{
-    font-size: 0.95rem;
-  }
-  .services__modal_content i{
-
-    font-size: 1.4rem;
-  }
 }
-@media all and ((min-width: 300px ) and (max-width: 600px)){
-  .service_card {
+
+@media all and ((min-width: 550px ) and (max-width: 750px)) {
+  .services_container {
     width: 100%;
   }
+  .service_card {
+    width: 70%;
+  }
+  .services_container {
+    flex-direction: column;
+  }
 
-}
-@media all and (max-width: 390px) {
-  #services{
-    padding-left: 25px !important;
-    padding-right: 25px !important;
+  .services__modal_content {
+    width: 75%;
   }
 }
-
-  @media all and (min-width:390px) and (max-width: 450px) {
-    #services{
-      padding-left: 25px !important;
-      padding-right: 25px !important;
-    }
+@media all and ((min-width: 300px ) and (max-width: 550px)) {
+  .services_container {
+    width: 100%;
   }
+  .service_card {
+    width: 85%;
+  }
+  .services_container {
+    flex-direction: column;
+  }
+
+  .services__modal_content {
+    width: 85%;
+  }
+}
